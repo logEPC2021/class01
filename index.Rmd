@@ -1,0 +1,348 @@
+---
+title: "Apresentação da disciplina"
+subtitle: "Logística - EPC"  
+author: 
+  - "Renata Oliveira"
+date: '18/10/2021'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "xaringan-themer.css"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(panel_tab_font_family = "sans-serif")
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{css include=FALSE}
+.panelset {
+   --panel-tab-foreground: currentColor;
+   --panel-tab-background: unset;
+   --panel-tab-active-foreground: currentColor;
+   --panel-tab-active-background: unset;
+   --panel-tab-active-border-color: currentColor;
+   --panel-tab-hover-foreground: currentColor;
+   --panel-tab-hover-background: unset;
+   --panel-tab-hover-border-color: currentColor;
+   --panel-tab-inactive-opacity: 0.5;
+   --panel-tabs-border-bottom: #ddd;
+   --panel-tab-font-family: Sen;
+   --panel-tab-background-color-active: #fffbe0;
+   --panel-tab-border-color-active: #023d4d;
+}
+
+.panelset .panel-tabs .panel-tab > a {
+	color: #023d4d;
+}
+
+.panelset .panel-tabs {
+  font-size: 0.5rem;
+}
+```
+
+```{r xaringanExtra, include = FALSE}
+xaringanExtra::use_xaringan_extra(c("tileview", "webcam"))
+```
+
+
+class: middle, center, inverse
+
+
+## Quem sou eu???
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, out.width="30%"}
+knitr::include_graphics("img/reta.jpg")
+```
+
+
+---
+
+class: middle, center, inverse
+
+## Evento DCSA/Coordenação Administração
+## Mundo do trabalho
+## 4a revolução industrial
+## Pandemia Sars-CoV-2
+
+---
+
+## Proposta pedagógica
+
+A intenção aqui é fazer com que o aprendizado seja mais dinâmico e ocorra de forma simultânea, fazendo com que o aluno tenha as bases teóricas e teste-as ao mesmo tempo.
+
+A proposta pedagógica para desenvolvimento deste curso fundamenta-se no conceito de `Aprendizagem Baseada em Projetos`. São propostas atividades para desenvolvimento de competências (`estudos autônomos`) e um `projeto integrador`, para consolidação e perspectiva integrada da disciplina. 
+
+---
+
+## Ementa da disciplina
+
+- Visão Geral da Logística.   
+- A Cadeia de Suprimentos (Supply Chain) - conceitos principais.   
+- Organização de Suprimentos: funções e objetivos.   
+- Compras e fornecedores.   
+- Armazenagem.   
+- Gestão de Estoques.   
+- Just-in-Time.   
+- Avaliação do sistema suprimentos.  
+
+---
+
+## Objetivos de aprendizagem
+
+Por meio desta disciplina, os alunos desenvolverão competências para:
+
+1.  Desenvolvimento de um conhecimento claro dos elementos constitutivos das cadeias de suprimentos.
+2.  Elaboração de estratégias para cadeia de suprimentos.
+3.  Desenvolvimento de soluções logísticas.
+4.  Integração da cadeia de suprimentos através do sistema de informações.
+
+
+---
+
+## Planejamento de encontros síncronos
+
+Os encontros síncronos acontecerão nas **segundas-feiras**, de **19:00 às 20:30h**. Acontecerão na plataforma `Teams`. 
+
+Vocês poderão acessar o canal da disciplina pelo [link](https://teams.microsoft.com/l/team/19%3a7C-HRfZ6jj8HwXf4p4T43lXROeBF2iERlTjicYOtU0E1%40thread.tacv2/conversations?groupId=5da93f1b-ae42-4d98-b553-d0b5d8b130ee&tenantId=ef9d67f2-bd3f-4e0c-84ba-3ffc81ab1c83).
+
+---
+
+## Planejamento de encontros síncronos
+
+.panelset[
+.panel[.panel-name[Encontros]
+
+| **Data**           | **CH** | **Assunto** |
+|--------------------|--------|-------------|
+| 18/10              |2h|Logística empresarial e a cadeia de suprimentos. 
+| 25/10              |2h|Planejamento e gestão da cadeia de suprimentos.
+| 08/11              |2h|KPIs em gestão de processos de produção e suprimento   
+| 22/11              |2h|Nível de serviço logístico
+| 29/11              |2h|Logística urbana.
+| 06/12              |2h|Logística urbana.
+| 13/12              |2h|Integração logística e sistemas de informação (ICT)
+ 
+
+
+]
+
+.panel[.panel-name[Mais encontros...]
+
+| **Data**           | **CH** | **Assunto** |
+|--------------------|--------|-------------|
+| 20/12              |2h|Transportes e distribuição física.   
+| 10/01              |2h|Transportes e distribuição física. 
+| 17/01              |2h|Gestão de estoques e armazenagem.
+| 24/01              |2h|Localizações logísticas
+| 31/01              |2h|Localizações logísticas
+
+]
+
+
+.panel[.panel-name[Mais alguns...]
+
+| **Data**           | **CH** | **Assunto** |
+|--------------------|--------|-------------|
+| 07/02              |2h|Custos logísticos.
+| 14/02              |2h|Custos logísticos.
+| 21/02              |2h|Logística reversa, verde e sustentável.
+| 28/02              | |Exame especial. 
+| **Total de Horas** |        |36 horas             |
+]
+]
+---
+
+## Proposta de avaliação da aprendizagem
+
+Pontos|	Entrega|	Atividade
+------|--------|-----------
+10| 17/11 | Estudos Autônomos 1 - Nivel de serviço logístico
+10| 24/11 | Estudos Autônomos 2 - TICs e KPIs
+10| 01/12 | Estudos Autônomos 3 – Logística Urbana
+10| 22/12 | Estudos Autônomos 4 - Gestão de Transportes
+10| 19/01 | Estudos Autônomos 5 - Gestão de estoques e armazenagem
+10| 16/02 | Estudos Autônomos 6 - Redes Logísticas e Custos
+10| 23/02 | Estudos Autônomos 7 - Multivarejo e Omnichannel
+20|	01/12	| Projeto incremental 1
+20|	23/02 |	Projeto incremental 2
+TOTAL:| |	100 pontos
+
+---
+## Recursos necessários
+
+Computador com Sistema Operacional à escolha do estudante, conexão à internet, câmera e microfone.
+
+Os softwares a serem instalados são: 
+
+Será necessário o uso de planilha eletrônica (o aplicativo pode ser de escolha do aluno) e ao longo da disciplina serão indicados aplicativos FOSS para outras análises.
+
+Os alunos serão cadastrados na plataforma `Teams`.
+
+Turma Virtual do SIGAA para postagens de conteúdos e outras comunicações.
+
+---
+
+## Comunicação
+
+Toda comunicação individual com a docente deverá acontecer por meio do email institucional do docente, deve conter no campo "assunto" o texto `<Log-epc>` e deve ser assinada com seu nome completo. Por favor, utilize o email institucional para comunicação com o docente: renataoliveira@cefetmg.br
+
+Se o seu email não contempla alguma questão pessoal/individual, mas sim questionamentos e dúvidas sobre as atividades deste curso, por favor:
+
+1. Verifique se a sua dúvida já foi respondida em algum post no canal `discussão` no `Teams`.
+2. Se não houver discussões sobre o tópico em questão, faça um novo post no canal `discussão` no `Teams`. 
+
+> Compartilhar as dúvidas e responder os questionamentos dos colegas é um excelente meio de aprendizagem.
+
+---
+
+## Políticas institucionais e da disciplina
+
+.panelset[
+.panel[.panel-name[Como interagir?]
+
+
+O comparecimento aos encontros síncronos é desejável. A participação nesses encontros faz com que os estudantes tenham melhor desempenho. Entretanto, considerando todos os desafios proporcionados pelo ensino remoto, todo o conteúdo do curso será disponibilizado nas plataformas adotadas para condução das atividades. Você poderá participar das atividades remotamente usando o `Discussão` no `Teams`. Sua participação no Fórum será considerada para a avaliação desse curso no atributo `Engajamento`. 
+
+1. Resposta a perguntas postadas pelos estudantes no `Discussão` no `Teams`. 
+2. Participação em discussões e trabalhos em grupo na sala de aula. 
+3. Identificação de problemas em relação à documentação apresentada.
+
+]
+
+.panel[.panel-name[Como agir?]
+
+Os estudantes e professores têm a responsabilidade de manter um ambiente de aprendizagem adequado e motivante. 
+
+A cortesia profissional e a sensibilidade são especialmente importantes no que diz respeito a indivíduos e discussões que lidam com diferenças de raça, cor, cultura, religião, credo, política, status de veterano, orientação sexual, gênero, identidade e expressão de gênero, idade, deficiência e nacionalidades. As listas de classes são fornecidas ao instrutor com o nome legal do aluno. Terei prazer em honrar seu pedido de dirigir-se a você por um nome alternativo ou pronome de gênero. Não serão tolerados atos de discriminação ou assédio contra ou por qualquer funcionário ou estudante.
+]
+
+.panel[.panel-name[Como trabalhar?]
+
+Honestidade acadêmica é um princípio fundamental desta disciplina. Desonestidade acadêmica configura-se por: cópias literais de textos ou ideias sem citação de fonte, fabricações e falsificações de qualquer natureza, plágio, mentira, suborno, comportamento ameaçador ou cumplicidade com desonestidade acadêmica em qualquer nível. 
+
+Os estudantes que forem considerados em violação da política de integridade acadêmica estarão sujeitos tanto a sanções acadêmicas do membro docente quanto a sanções não acadêmicas. Se você tiver alguma dúvida sobre citações adequadas, configuração de plágio, etc., por favor, não hesite em perguntar!
+]
+]
+
+
+---
+
+## Organização das atividades:
+
+1. **Composição dos grupos de trabalho:** Cada grupo será composto por **três a quatro alunos**. Esse grupo deve se manter para realização de todos os projetos. 
+
+2. **Planejamento da execução dos trabalhos:** Definir um cronograma a priori, contemplando entregas parciais alinhadas com os projetos e acompanhar as etapas de execução. 
+
+---
+
+## O que é Logística?
+
+Penso que o logística é muito mais um conjunto de princípios do que uma operação. "Fazer" `logística` relaciona-se à **promover o acesso a bens de consumo  e serviços, essenciais à vida humana e promovidos pelo consumo, destinados ao consumidor final da maneira mais eficiente e responsiva possível**. 
+
+.question[
+“**Logística** é dispor a **mercadoria ou o serviço** certo, no **lugar** certo, no **tempo** certo e nas **condições desejadas**, ao mesmo tempo em que fornece a **maior contribuição à empresa**”. 
+(Ballou, 2001)
+]
+---
+
+# O que é uma cadeia de suprimentos?
+.question[
+A cadeia de suprimentos é a integração dos processos industriais e comerciais, partindo dos fornecedores iniciais até o consumidor final, gerando produtos, serviços e informações que agreguem valor para o cliente, maximizando a lucratividade total.
+]
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/supply-chain.jpg")
+```
+---
+
+# Como esses conceitos passaram a fazer parte das nossas vidas?
+
+.pull-left[
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/log2.jpg")
+```
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/log3.jpg")
+```
+]
+
+.pull-right[
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/log4.jpg")
+```
+]
+
+---
+# Evolução da logística 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/log5.png")
+```
+
+---
+
+class: inverse
+
+## ATIVIDADES DA SEMANA
+
+.your-turn[
+Quem comporá cada grupo de trabalho?
+]
+
+.your-turn[
+Atividade preliminar 1 - individual - moodle
+]
+
+---
+class: inverse, middle
+
+.center[
+# Obrigada!
+]
+
+<a href="mailto:renataoliveira@gmail.com"><i class="fa fa-paper-plane fa-fw"></i>&nbsp; renataoliveira@gmail.com</a><br>
+<a href="http://twitter.com/retaoliveira"><i class="fa fa-twitter fa-fw"></i>&nbsp; @retaoliveira</a><br>
+<a href="http://github.com/retaoliveira"><i class="fa fa-github fa-fw"></i>&nbsp; @retaoliveira</a><br>
