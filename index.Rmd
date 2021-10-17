@@ -335,7 +335,7 @@ class: inverse
 Quem comporá cada grupo de trabalho?
 ]
 
-.your-turn[
+.code[
 Atividade preliminar 1 - individual - moodle
 ]
 

@@ -140,6 +140,12 @@ h1, h2, h3 {
   font-size: 100%;
 }
 
+/* Handwriting */
+.code{
+  font-family: 'Fira', Sans-Serif;
+  font-size: 100%;
+}
+
 /*Alternative two-column layouts*/
 
   /*Left 70% - Right 30% */
