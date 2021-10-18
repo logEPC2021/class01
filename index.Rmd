@@ -91,6 +91,12 @@ xaringanExtra::use_xaringan_extra(c("tileview", "webcam"))
 
 class: middle, center, inverse
 
+[Logística é parte da minha vida?](https://valorinveste.globo.com/mercados/brasil-e-politica/noticia/2021/10/17/caminhoneiros-prometem-greve-a-partir-de-1o-de-novembro-se-governo-nao-atender-pedidos.ghtml)
+
+---
+
+class: middle, center, inverse
+
 
 ## Quem sou eu???
 
